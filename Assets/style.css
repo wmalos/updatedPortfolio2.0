@@ -1,0 +1,61 @@
+.header {
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: cadetblue;
+    color: white;
+}
+
+body {
+    background-color: #e3f2fd;
+}
+
+nav {
+    padding: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+nav a {
+    display: flex;
+    justify-content: baseline;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+div .about-me {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div .about-me img {
+    margin-left: 50px;
+    max-height: 500px;
+    max-width: 400px;
+}
+.projects img:hover {
+    opacity: .5;
+    zoom: 1.2;
+}
+
+.contact-me {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+@media screen and (max-width: 860px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: space-between;
+    }
+
+    div .about-me img {
+        margin-left: 1px;
+        max-width: 400px;
+        max-height: 300px;
+    }
+}
